@@ -1,0 +1,22 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: var(--dark_blue);
+}
+
+.triangleLeft {
+    position: absolute;
+    top: 0;
+    left: -15rem;
+}
+
+.triangleRight {
+    position: absolute;
+    bottom: -13rem;
+    right: -9rem;
+}
