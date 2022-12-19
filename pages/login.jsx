@@ -4,7 +4,7 @@ import Image from 'next/image'
 import triangle from '../public/Group9470.svg'
 import Phone from '../components/Login/Phone/Phone'
 
-const login = () => {
+const Login = () => {
     const [phone, setPhone] = useState()
     const [checked, setChecked] = useState(false)
 
@@ -34,4 +34,4 @@ const login = () => {
     )
 }
 
-export default login
+export default Login
