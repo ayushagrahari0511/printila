@@ -13,10 +13,73 @@
     position: absolute;
     top: 0;
     left: -15rem;
+    z-index: 0;
 }
 
 .triangleRight {
     position: absolute;
     bottom: -13rem;
     right: -9rem;
+    z-index: 0;
+}
+
+
+/* For tablets */
+@media (max-width: 991.98px) {
+    .triangleLeft {
+        left: -12rem;
+    }
+
+    .triangleRight {
+        bottom: -11rem;
+        right: -7rem;
+    }
+
+    .triangleLeft img,
+    .triangleRight img {
+        width: 24rem !important;
+        height: 30rem !important;
+    }
+}
+
+/* Small devices (landscape phone, )------------------
+--------------------------- */
+
+@media (max-width: 767.98px) {
+    
+}
+
+/* Small devices such as phone -------------------
+-----------------------------------*/
+
+@media (max-width: 575.98px) {
+    .triangleLeft {
+        left: -12rem;
+    }
+
+    .triangleRight {
+        bottom: -11rem;
+        right: -7rem;
+    }
+
+    .triangleLeft img,
+    .triangleRight img {
+        width: 22rem !important;
+        height: 28rem !important;
+    }
+}
+
+/* Xtra small devices -------------------
+-----------------------------------*/
+
+@media (max-width: 480.98px) {
+    .container {
+        background: #fff;
+        height: 80vh;
+    }
+
+    .triangleLeft, 
+    .triangleRight {
+        display: none;
+    }
 }

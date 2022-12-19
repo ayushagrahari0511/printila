@@ -1,21 +1,8 @@
 import styles from './Phone.module.css'
-import { useState } from 'react'
 import printila from '../../../public/printila_logo.png'
 import Image from 'next/image'
 
-const Phone = () => {
-    const [phone, setPhone] = useState()
-    const [checked, setChecked] = useState(false)
-
-    // Function to store the number in state
-    const inputPhone = (e) => {
-        setPhone(e.target.value)
-    }
-
-    const inputChecked = () => {
-        setChecked(!checked)
-    }
-
+const Phone = ({ phone, checked, inputPhone, inputChecked }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
     }
@@ -36,7 +23,7 @@ const Phone = () => {
                             and Privacy Policy
                         </label>
                     </div>
-                    <button onClick={handleSubmit} disabled={!checked || !phone}>
+                    <button onClick={handleSubmit} disabled={!checked || phone?.split("").length !== 10}>
                         Get Started
                     </button>
                 </form>

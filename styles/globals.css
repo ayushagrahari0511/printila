@@ -18,6 +18,10 @@ html {
   --primary_warning: #E03F3F;
   --light_warning: #FFDBDB;
   --dark_black: #000000;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-focus-ring-color: transparent !important;
+  outline: none !important;
+  background: transparent;
 }
 
 body {
@@ -33,4 +37,41 @@ a {
   -webkit-focus-ring-color: transparent !important;
   outline: none !important;
   background: transparent;
+}
+
+
+@media (max-width: 1199.98px) {
+
+}
+
+/* for Medium devices --------------
+---------------------*/
+@media (max-width: 1060px) {
+ 
+}
+
+/* For tablets */
+@media (max-width: 991.98px) {
+ 
+}
+
+/* Small devices (landscape phone, )------------------
+--------------------------- */
+
+@media (max-width: 767.98px) {
+
+}
+
+/* Small devices such as phone -------------------
+-----------------------------------*/
+
+@media (max-width: 575.98px) {
+  
+ }
+
+ /* Xtra small devices -------------------
+-----------------------------------*/
+
+@media (max-width: 480.98px) {
+  
 }
